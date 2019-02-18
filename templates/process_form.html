@@ -1,0 +1,29 @@
+<html>
+<head></head>
+
+<body>
+
+<hr>
+
+<h1>To Do List: </h1>
+
+<ul>
+{%for task in tasks %}
+<li> {{ task }} <a href="#"> [x] </a>
+
+{% endfor %}
+
+</ul>
+
+<h2>Add a new task: </h2>
+<form action = "process_request" method = "post">
+
+<input type = "text" id="task" name = "task"></input>
+
+<input type= "submit" value="SEND">
+
+</form>
+
+</body>
+
+</html>
